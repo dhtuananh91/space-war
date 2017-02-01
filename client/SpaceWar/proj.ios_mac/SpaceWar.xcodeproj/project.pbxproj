@@ -20,7 +20,6 @@
 		503AE10517EB98FF00D1A890 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 503AE10317EB98FF00D1A890 /* main.cpp */; };
 		503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
 		5087E76317EB910900C73F5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		5087E76717EB910900C73F5D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		5087E76817EB910900C73F5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
 		5087E76917EB910900C73F5D /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		5087E76A17EB910900C73F5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
@@ -53,6 +52,16 @@
 		711D07061E3D3609006223B3 /* libSmartFoxClientApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 711D06FF1E3D346C006223B3 /* libSmartFoxClientApi.a */; };
 		711D07091E3D360F006223B3 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 711D07071E3D360F006223B3 /* libboost_system.a */; };
 		711D070A1E3D360F006223B3 /* libboost_thread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 711D07081E3D360F006223B3 /* libboost_thread.a */; };
+		715FE34A1E425118009E3B13 /* StarshipNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 715FE3461E425118009E3B13 /* StarshipNode.cpp */; };
+		715FE34B1E425118009E3B13 /* WeaponShot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 715FE3481E425118009E3B13 /* WeaponShot.cpp */; };
+		715FE34D1E4251E0009E3B13 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 715FE34C1E4251E0009E3B13 /* libz.tbd */; };
+		715FE34F1E42520B009E3B13 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 715FE34E1E42520B009E3B13 /* libiconv.tbd */; };
+		715FE3561E425305009E3B13 /* Fire_Button_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 715FE3501E425305009E3B13 /* Fire_Button_Normal.png */; };
+		715FE3571E425305009E3B13 /* Fire_Button_Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 715FE3511E425305009E3B13 /* Fire_Button_Pressed.png */; };
+		715FE3581E425305009E3B13 /* Left_Button_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 715FE3521E425305009E3B13 /* Left_Button_Normal.png */; };
+		715FE3591E425305009E3B13 /* Left_Button_Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 715FE3531E425305009E3B13 /* Left_Button_Pressed.png */; };
+		715FE35A1E425305009E3B13 /* Thrust_Button_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 715FE3541E425305009E3B13 /* Thrust_Button_Normal.png */; };
+		715FE35B1E425305009E3B13 /* Thrust_Button_Pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 715FE3551E425305009E3B13 /* Thrust_Button_Pressed.png */; };
 		717668221E3D0E55005D39F0 /* ServerConnector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 717668201E3D0E55005D39F0 /* ServerConnector.cpp */; };
 		717668641E3D0F39005D39F0 /* bg_starfield1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 717668331E3D0F39005D39F0 /* bg_starfield1.jpg */; };
 		717668651E3D0F39005D39F0 /* bg_starfield2.png in Resources */ = {isa = PBXBuildFile; fileRef = 717668341E3D0F39005D39F0 /* bg_starfield2.png */; };
@@ -117,13 +126,10 @@
 		719FF8231E3E4E79007ED3AB /* Starship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7176689C1E3D0FC3005D39F0 /* Starship.cpp */; };
 		719FF8241E3E4E79007ED3AB /* ServerConnector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 717668201E3D0E55005D39F0 /* ServerConnector.cpp */; };
 		8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
-		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
 		BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
 		D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
-		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
-		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,7 +186,6 @@
 
 /* Begin PBXFileReference section */
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
-		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* SpaceWar-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceWar-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -196,7 +201,6 @@
 		503AE0FF17EB989F00D1A890 /* RootViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = ios/RootViewController.mm; sourceTree = SOURCE_ROOT; };
 		503AE10317EB98FF00D1A890 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = mac/main.cpp; sourceTree = "<group>"; };
 		503AE10417EB98FF00D1A890 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = mac/Prefix.pch; sourceTree = "<group>"; };
-		503AE11117EB99EE00D1A890 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = usr/lib/libcurl.dylib; sourceTree = SDKROOT; };
 		503AE11A17EB9C5A00D1A890 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		5087E76F17EB910900C73F5D /* SpaceWar-desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpaceWar-desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5087E77217EB970100C73F5D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -228,6 +232,18 @@
 		711D06FA1E3D346C006223B3 /* SmartFoxClientApi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SmartFoxClientApi.xcodeproj; path = "../../../sfs-api/Project/Xcode/SmartFoxClientApi/SmartFoxClientApi.xcodeproj"; sourceTree = "<group>"; };
 		711D07071E3D360F006223B3 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../../../external/boost/ios/prefix/lib/libboost_system.a; sourceTree = "<group>"; };
 		711D07081E3D360F006223B3 /* libboost_thread.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_thread.a; path = ../../../external/boost/ios/prefix/lib/libboost_thread.a; sourceTree = "<group>"; };
+		715FE3461E425118009E3B13 /* StarshipNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StarshipNode.cpp; path = GameObjects/StarshipNode.cpp; sourceTree = "<group>"; };
+		715FE3471E425118009E3B13 /* StarshipNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StarshipNode.h; path = GameObjects/StarshipNode.h; sourceTree = "<group>"; };
+		715FE3481E425118009E3B13 /* WeaponShot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = WeaponShot.cpp; path = GameObjects/WeaponShot.cpp; sourceTree = "<group>"; };
+		715FE3491E425118009E3B13 /* WeaponShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeaponShot.h; path = GameObjects/WeaponShot.h; sourceTree = "<group>"; };
+		715FE34C1E4251E0009E3B13 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		715FE34E1E42520B009E3B13 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
+		715FE3501E425305009E3B13 /* Fire_Button_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fire_Button_Normal.png; sourceTree = "<group>"; };
+		715FE3511E425305009E3B13 /* Fire_Button_Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fire_Button_Pressed.png; sourceTree = "<group>"; };
+		715FE3521E425305009E3B13 /* Left_Button_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Left_Button_Normal.png; sourceTree = "<group>"; };
+		715FE3531E425305009E3B13 /* Left_Button_Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Left_Button_Pressed.png; sourceTree = "<group>"; };
+		715FE3541E425305009E3B13 /* Thrust_Button_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thrust_Button_Normal.png; sourceTree = "<group>"; };
+		715FE3551E425305009E3B13 /* Thrust_Button_Pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Thrust_Button_Pressed.png; sourceTree = "<group>"; };
 		717668201E3D0E55005D39F0 /* ServerConnector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ServerConnector.cpp; sourceTree = "<group>"; };
 		717668211E3D0E55005D39F0 /* ServerConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConnector.h; sourceTree = "<group>"; };
 		717668331E3D0F39005D39F0 /* bg_starfield1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_starfield1.jpg; sourceTree = "<group>"; };
@@ -295,13 +311,10 @@
 		717668AB1E3D0FED005D39F0 /* ShipScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ShipScene.cpp; path = Scenes/ShipScene.cpp; sourceTree = "<group>"; };
 		717668AC1E3D0FED005D39F0 /* ShipScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShipScene.h; path = Scenes/ShipScene.h; sourceTree = "<group>"; };
 		8262943D1AAF051F00CB7CF7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BF1C47EA1293683800B63C5D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D44C620B132DFF330009C878 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
-		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,10 +322,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715FE34F1E42520B009E3B13 /* libiconv.tbd in Frameworks */,
+				715FE34D1E4251E0009E3B13 /* libz.tbd in Frameworks */,
 				711D07061E3D3609006223B3 /* libSmartFoxClientApi.a in Frameworks */,
 				711D07091E3D360F006223B3 /* libboost_system.a in Frameworks */,
 				711D070A1E3D360F006223B3 /* libboost_thread.a in Frameworks */,
-				ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */,
 				1AC6FB30180E99EB004C840B /* libcocos2d iOS.a in Frameworks */,
 				711D06E91E3D2F77006223B3 /* OpenGLES.framework in Frameworks */,
 				711D06E71E3D2F6A006223B3 /* UIKit.framework in Frameworks */,
@@ -321,7 +335,6 @@
 				711D06E01E3D2F3F006223B3 /* Security.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
-				BF1712471292920000B8313A /* libz.dylib in Frameworks */,
 				BF1C47F01293687400B63C5D /* QuartzCore.framework in Frameworks */,
 				D44C620C132DFF330009C878 /* OpenAL.framework in Frameworks */,
 				D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */,
@@ -333,9 +346,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */,
 				1AC6FB21180E996B004C840B /* libcocos2d Mac.a in Frameworks */,
-				5087E76717EB910900C73F5D /* libz.dylib in Frameworks */,
 				8262943E1AAF051F00CB7CF7 /* Security.framework in Frameworks */,
 				503AE11B17EB9C5A00D1A890 /* IOKit.framework in Frameworks */,
 				5087E78B17EB975400C73F5D /* OpenGL.framework in Frameworks */,
@@ -403,6 +414,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				715FE34E1E42520B009E3B13 /* libiconv.tbd */,
+				715FE34C1E4251E0009E3B13 /* libz.tbd */,
 				711D07071E3D360F006223B3 /* libboost_system.a */,
 				711D07081E3D360F006223B3 /* libboost_thread.a */,
 				711D06E81E3D2F77006223B3 /* OpenGLES.framework */,
@@ -410,15 +423,10 @@
 				711D06E41E3D2F5C006223B3 /* CoreMotion.framework */,
 				711D06E21E3D2F4D006223B3 /* CoreText.framework */,
 				711D06DF1E3D2F3F006223B3 /* Security.framework */,
-				ED545A7D1B68A1FA00C3958E /* libiconv.dylib */,
-				ED545A7B1B68A1F400C3958E /* libiconv.dylib */,
 				8262943D1AAF051F00CB7CF7 /* Security.framework */,
 				503AE11A17EB9C5A00D1A890 /* IOKit.framework */,
-				503AE11117EB99EE00D1A890 /* libcurl.dylib */,
 				5087E78A17EB975400C73F5D /* OpenGL.framework */,
 				5087E78817EB974C00C73F5D /* AppKit.framework */,
-				1ACB3243164770DE00914215 /* libcurl.a */,
-				BF170DB412928DE900B8313A /* libz.dylib */,
 				D44C620F132DFF4E0009C878 /* AudioToolbox.framework */,
 				D44C620D132DFF430009C878 /* AVFoundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -432,6 +440,12 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				715FE3501E425305009E3B13 /* Fire_Button_Normal.png */,
+				715FE3511E425305009E3B13 /* Fire_Button_Pressed.png */,
+				715FE3521E425305009E3B13 /* Left_Button_Normal.png */,
+				715FE3531E425305009E3B13 /* Left_Button_Pressed.png */,
+				715FE3541E425305009E3B13 /* Thrust_Button_Normal.png */,
+				715FE3551E425305009E3B13 /* Thrust_Button_Pressed.png */,
 				717668331E3D0F39005D39F0 /* bg_starfield1.jpg */,
 				717668341E3D0F39005D39F0 /* bg_starfield2.png */,
 				717668351E3D0F39005D39F0 /* button_play.png */,
@@ -559,6 +573,10 @@
 		717668991E3D0FAF005D39F0 /* GameObjects */ = {
 			isa = PBXGroup;
 			children = (
+				715FE3461E425118009E3B13 /* StarshipNode.cpp */,
+				715FE3471E425118009E3B13 /* StarshipNode.h */,
+				715FE3481E425118009E3B13 /* WeaponShot.cpp */,
+				715FE3491E425118009E3B13 /* WeaponShot.h */,
 				7176689A1E3D0FC3005D39F0 /* GameItem.cpp */,
 				7176689B1E3D0FC3005D39F0 /* GameItem.h */,
 				7176689C1E3D0FC3005D39F0 /* Starship.cpp */,
@@ -719,6 +737,7 @@
 				7176688B1E3D0F39005D39F0 /* weapon_torpedo_0010.png in Resources */,
 				717668941E3D0F39005D39F0 /* weapon_torpedo_0019.png in Resources */,
 				7176688F1E3D0F39005D39F0 /* weapon_torpedo_0014.png in Resources */,
+				715FE3581E425305009E3B13 /* Left_Button_Normal.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				7176687E1E3D0F39005D39F0 /* ship_viking_0003.png in Resources */,
 				717668661E3D0F39005D39F0 /* button_play.png in Resources */,
@@ -754,7 +773,11 @@
 				717668681E3D0F39005D39F0 /* explosion_0002.png in Resources */,
 				717668871E3D0F39005D39F0 /* weapon_torpedo_0006.png in Resources */,
 				7176687C1E3D0F39005D39F0 /* ship_viking_0001.png in Resources */,
+				715FE3571E425305009E3B13 /* Fire_Button_Pressed.png in Resources */,
+				715FE35B1E425305009E3B13 /* Thrust_Button_Pressed.png in Resources */,
+				715FE3561E425305009E3B13 /* Fire_Button_Normal.png in Resources */,
 				717668841E3D0F39005D39F0 /* weapon_torpedo_0003.png in Resources */,
+				715FE3591E425305009E3B13 /* Left_Button_Pressed.png in Resources */,
 				717668861E3D0F39005D39F0 /* weapon_torpedo_0005.png in Resources */,
 				717668751E3D0F39005D39F0 /* ship_astro_0003.png in Resources */,
 				717668901E3D0F39005D39F0 /* weapon_torpedo_0015.png in Resources */,
@@ -764,6 +787,7 @@
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				717668891E3D0F39005D39F0 /* weapon_torpedo_0008.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
+				715FE35A1E425305009E3B13 /* Thrust_Button_Normal.png in Resources */,
 				7176687F1E3D0F39005D39F0 /* system_menu_sol.png in Resources */,
 				717668651E3D0F39005D39F0 /* bg_starfield2.png in Resources */,
 				717668811E3D0F39005D39F0 /* username_bg.png in Resources */,
@@ -797,6 +821,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				715FE34B1E425118009E3B13 /* WeaponShot.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				7176689E1E3D0FC3005D39F0 /* GameItem.cpp in Sources */,
@@ -806,6 +831,7 @@
 				717668221E3D0E55005D39F0 /* ServerConnector.cpp in Sources */,
 				7176689F1E3D0FC3005D39F0 /* Starship.cpp in Sources */,
 				717668AE1E3D0FED005D39F0 /* GameScene.cpp in Sources */,
+				715FE34A1E425118009E3B13 /* StarshipNode.cpp in Sources */,
 				717668B01E3D0FED005D39F0 /* ShipScene.cpp in Sources */,
 				717668AD1E3D0FED005D39F0 /* BaseScene.cpp in Sources */,
 			);
