@@ -82,10 +82,10 @@ void ServerConnector::initSmartFox()
 #endif
 
 	m_smartFoxServer->ThreadSafeMode(true);
-	m_smartFoxServer->AddLogListener(Sfs2X::Logging::LOGLEVEL_DEBUG, boost::shared_ptr<EventListenerDelegate>(new EventListenerDelegate(OnSmartfoxLog, (unsigned long long)this)));
-	m_smartFoxServer->AddLogListener(Sfs2X::Logging::LOGLEVEL_ERROR, boost::shared_ptr<EventListenerDelegate>(new EventListenerDelegate(OnSmartfoxLog, (unsigned long long)this)));
-	m_smartFoxServer->AddLogListener(Sfs2X::Logging::LOGLEVEL_INFO, boost::shared_ptr<EventListenerDelegate>(new EventListenerDelegate(OnSmartfoxLog, (unsigned long long)this)));
-	m_smartFoxServer->AddLogListener(Sfs2X::Logging::LOGLEVEL_WARN, boost::shared_ptr<EventListenerDelegate>(new EventListenerDelegate(OnSmartfoxLog, (unsigned long long)this)));
+//	m_smartFoxServer->AddLogListener(Sfs2X::Logging::LOGLEVEL_DEBUG, boost::shared_ptr<EventListenerDelegate>(new EventListenerDelegate(OnSmartfoxLog, (unsigned long long)this)));
+//	m_smartFoxServer->AddLogListener(Sfs2X::Logging::LOGLEVEL_ERROR, boost::shared_ptr<EventListenerDelegate>(new EventListenerDelegate(OnSmartfoxLog, (unsigned long long)this)));
+//	m_smartFoxServer->AddLogListener(Sfs2X::Logging::LOGLEVEL_INFO, boost::shared_ptr<EventListenerDelegate>(new EventListenerDelegate(OnSmartfoxLog, (unsigned long long)this)));
+//	m_smartFoxServer->AddLogListener(Sfs2X::Logging::LOGLEVEL_WARN, boost::shared_ptr<EventListenerDelegate>(new EventListenerDelegate(OnSmartfoxLog, (unsigned long long)this)));
 	
 	// Add some basic events callback
 	m_smartFoxServer->AddEventListener(SFSEvent::CONNECTION, boost::shared_ptr<EventListenerDelegate>(new EventListenerDelegate(OnConnection, (unsigned long long)this)));

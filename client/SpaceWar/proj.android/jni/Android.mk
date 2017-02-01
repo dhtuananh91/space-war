@@ -19,6 +19,8 @@ LOCAL_SRC_FILES := 	hellocpp/main.cpp \
 					../../Classes/ServerConnector.cpp \
 					../../Classes/GameObjects/GameItem.cpp \
 					../../Classes/GameObjects/Starship.cpp \
+					../../Classes/GameObjects/WeaponShot.cpp \
+					../../Classes/GameObjects/StarshipNode.cpp \
 					../../Classes/Scenes/BaseScene.cpp \
 					../../Classes/Scenes/GameScene.cpp \
 					../../Classes/Scenes/LoginScene.cpp \
