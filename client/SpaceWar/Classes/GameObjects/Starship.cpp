@@ -1,13 +1,11 @@
 #include "Starship.h"
 
-USING_NS_CC;
-
-Starship::Starship():GameItem()
-{	
+Starship::Starship() : GameItem()
+{
 	this->userName = "";
 	this->isMine = false;
 	this->thrusterValue = 0;
-	this->rotatingDir = 0;	
+	this->rotatingDir = 0;
 	this->_doThrust = false;	
 }
 

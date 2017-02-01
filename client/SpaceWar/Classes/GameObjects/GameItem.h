@@ -21,7 +21,7 @@ T* createGameItem(const std::string& filename) {
 class GameItem : public cocos2d::Sprite
 {
 public:
-	long int userId;
+	long int id;
 	float xx;
 	float yy;
 	cocos2d::Vec2 velocity;

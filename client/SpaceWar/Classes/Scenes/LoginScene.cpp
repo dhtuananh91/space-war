@@ -81,6 +81,7 @@ bool LoginScene::init()
 			break;
 		case cocos2d::ui::TextField::EventType::DETACH_WITH_IME:
 			this->m_userName = ((ui::TextField*)sender)->getString();
+			CCLOG("Updated username: %s", this->m_userName.c_str());
 			break;
 		case cocos2d::ui::TextField::EventType::INSERT_TEXT:			
 			break;
@@ -99,6 +100,7 @@ bool LoginScene::init()
 		case ui::Widget::TouchEventType::BEGAN:
 			break;
 		case ui::Widget::TouchEventType::ENDED:			
+			CCLOG("Username: %s", m_userName.c_str());
 			login(m_userName);
 			break;
 		default:

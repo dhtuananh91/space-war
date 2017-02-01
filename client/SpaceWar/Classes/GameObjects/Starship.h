@@ -12,7 +12,7 @@ public:
 	int rotatingDir;
 public:
 	static Starship* createShip(std::string type);
-	Starship();
+	Starship();	
 	void doThrust(bool value);
 	void normalizedSpeed();
 	float rotationSpeed();

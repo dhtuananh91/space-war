@@ -12,9 +12,16 @@
 #include "Requests/ExtensionRequest.h"
 
 #include "cocos2d.h"
+#include "ui/CocosGUI.h"
+
 #include "NewSceneData.h"
 #include "BaseScene.h"
-#include "GameObjects/Starship.h"
+#include "GameObjects/StarshipNode.h"
+#include "GameObjects/WeaponShot.h"
+
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) // ) // 
+	#define SHOW_BUTTONS
+#endif
 
 class AppDelegate;
 class GameScene : public BaseScene
@@ -27,19 +34,36 @@ protected:
 	boost::shared_ptr<ISFSObject> starsShipModels;
 	boost::shared_ptr<ISFSObject> weaponsShipModels;
 
+#ifndef SHOW_BUTTONS
 	bool isThrustKeyDown;
 	bool isFire1KeyDown;
+#else	
+	bool lastThrustBtnPressed;
+	bool lastFireBtnPressed;	
 
+	bool isLeftBtnPressed;
+	bool isRightBtnPressed;
+	bool isThrustBtnPressed;
+	bool isFireBtnPressed;	
+
+	cocos2d::ui::Button* leftBtn;
+	cocos2d::ui::Button* rightBtn;
+
+	cocos2d::ui::Button* thrustBtn;
+	cocos2d::ui::Button* fireBtn;
+#endif // !SHOW_BUTTONS
+	
 	float offsetX;
 	float offsetY;
 	cocos2d::Node* rootNode;
 	cocos2d::Sprite* background;
 	cocos2d::Sprite* foreground;
 
-	Starship* myStarship;
-	boost::shared_ptr<std::map<long int, Starship*>> starships;
+	StarshipNode* myStarship;
+	boost::shared_ptr<std::map<long int, StarshipNode*>> starships;
+	boost::shared_ptr<std::map<long int, WeaponShot*>> weaponShots;
 
-	float gameTime;	
+	float gameTime;
 public:
 	static NewSceneData createScene();
 
@@ -52,9 +76,10 @@ public:
 	// implement the "static create()" method manually
 	CREATE_FUNC(GameScene);
 
+#ifndef SHOW_BUTTONS
 	void onKeyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
-
 	void onKeyReleased(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event* event);
+#endif // !SHOW_BUTTONS	
 
 	void setup(boost::shared_ptr<ISFSObject> starsShipModels, boost::shared_ptr<ISFSObject> weaponsModels);
 
@@ -62,7 +87,9 @@ public:
 
 	void update(float deltaTime);
 
-	void updateShip(Starship* ship);
+	void updateShip(StarshipNode* shipNode);
+
+	void updateShot(WeaponShot* shot);
 
 	void setStarshipRotating(long int userId, long r);
 
@@ -77,6 +104,12 @@ public:
 	void removeWeaponShot(long int weaponId);
 
 	void explodeWeaponShot(long int shotId, long int posX, long int posY);
+
+	void updateShipDir(int dir, int direction);
+
+	void updateShipThrust(bool active);
+
+	void fire();
 };
 
 #endif // !__GAME_SCENE_H__
