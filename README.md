@@ -51,7 +51,7 @@ Build
 
 #### <i class="icon-folder"></i> Build on Android
 
- 1. Follow an instruction of **How to start a new game** from [Cocos2d-x](https://github.com/cocos2d/cocos2d-x#how-to-start-a-new-game) with v3.13.1. After setup, you should see **ANT_ROOT**, **NDK_ROOT**, **ANDROID_SDK_ROOT ** in your environment variables. Make sure these variables point to right **Apache Ant** version and **Android NDK** version as mentioned above 
+ 1. Follow an instruction of **How to start a new game** from [Cocos2d-x](https://github.com/cocos2d/cocos2d-x#how-to-start-a-new-game) with v3.13.1. After setup, you should see **ANT_ROOT**, **NDK_ROOT**, **ANDROID_SDK_ROOT** in your environment variables. Make sure these variables point to right **Apache Ant** version and **Android NDK** version as mentioned above 
  2. Navigate to **client/SpaceWar**
  3. Run ```$cocos run -p android```
 
