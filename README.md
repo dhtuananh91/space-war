@@ -60,7 +60,9 @@ Build
 
 Project Specification
 -------------
+
 - **Structure**
+
 > - **Client**: Space War client source code with cocos2d-x v3.13.1 source code 
 > - **external**: Boost C++ Library for Android & iOS
 > - **sfs-api**: SmartfoxClient API source code v1.6.4 with some modified
