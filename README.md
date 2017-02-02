@@ -71,7 +71,8 @@ Highlights
 ----------
 - Sprite
 
-> All game objects in **space war** game uses **Sprite** class for presentation. If this is new for you, please read [Sprite Concept](http://cocos2d-x.org/docs/programmers-guide/sprites). In our project we created a template function in **GameItem.cpp** named 
+> All game objects in **space war** game uses **Sprite** class for presentation. If this is new for you, please read [Sprite Concept](http://cocos2d-x.org/docs/programmers-guide/sprites). In our project we created a template function in **GameItem.cpp** named
+
 ```c++
 template <class T> 
 T* createGameItem(const std::string& filename) {
