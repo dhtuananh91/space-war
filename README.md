@@ -177,4 +177,4 @@ addChild(leftBtn);
 
 Author
 --------
-[Dang Hoang Tuan Anh](dh.tuananh.91@gmail.com)
+[Dang Hoang Tuan Anh](https://github.com/dhtuananh91)
