@@ -10,8 +10,9 @@ This example is a porting of its Flash counterpart. The two versions of the game
 
 Dependencies
 -------------
-- [Cocos2dx v3.13.1](https://github.com/cocos2d/cocos2d-x/archive/cocos2d-x-3.13.1.zip)
-- [Android NDK R10e](https://dl.google.com/android/repository/android-ndk-r10e-darwin-x86_64.zip)
+- [Cocos2dx v3.14.1](http://www.cocos2d-x.org/filedown/cocos2d-x-3.14.1.zip)
+- [Android NDK R10e macOS](https://dl.google.com/android/repository/android-ndk-r10e-darwin-x86_64.zip)
+- [Android SDK macOS](https://dl.google.com/android/repository/tools_r25.2.3-macosx.zip)
 - [Apache Ant v1.9.7](http://archive.apache.org/dist/ant/binaries/apache-ant-1.9.7-bin.zip)
 - **Boost C++ Library v1.59** (included in external folder)
 - **OpenSSL v1.0.2j** (included in external folder)
@@ -30,7 +31,7 @@ Environment
 
 Platform
 -------------
-- **Android** with version >= 15
+- **Android** with min version >= 15 and target-sdk = 25
 - **iOS** with version >= 8.0
 - **Windows**
 
@@ -51,9 +52,10 @@ Build
 
 #### <i class="icon-folder"></i> Build on Android
 
- 1. Follow an instruction of **How to start a new game** from [Cocos2d-x](https://github.com/cocos2d/cocos2d-x#how-to-start-a-new-game) with v3.13.1. After setup, you should see **ANT_ROOT**, **NDK_ROOT**, **ANDROID_SDK_ROOT ** in your environment variables. Make sure these variables point to right **Apache Ant** version and **Android NDK** version as mentioned above 
- 2. Navigate to **client/SpaceWar**
- 3. Run ```$cocos run -p android```
+ 1. Follow an instruction of **How to start a new game** from [Cocos2d-x](https://github.com/cocos2d/cocos2d-x#how-to-start-a-new-game) with v3.14.1. After setup, you should see **ANT_ROOT**, **NDK_ROOT**, **ANDROID_SDK_ROOT ** in your environment variables. Make sure these variables point to right **Apache Ant** version and **Android NDK** version as mentioned above 
+ 2. Make sure your **android sdk tool** have **platform-25**. You can check it at **platforms** folder inside **Android SDK Tool**
+ 3. Navigate to **client/SpaceWar**
+ 4. Run ```$cocos run -p android```
 
 ----------
 
