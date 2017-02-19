@@ -158,16 +158,16 @@ LOCAL_SRC_FILES := 	hellocpp/main.cpp \
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes \
 					$(LOCAL_PATH)/../../../../sfs-api \
-					$(LOCAL_PATH)/../../../../external/boost/android/include \
 					$(LOCAL_PATH)/../../../../external/openssl-1.0.2j/include
 
-LOCAL_LDLIBS	:= -L$(LOCAL_PATH)/../../../../external/boost/android/lib/ -lboost_system -lboost_thread
+# LOCAL_LDLIBS	:= -L$(LOCAL_PATH)/../../../../external/boost/android/lib/ -lboost_system -lboost_thread
 
 # _COCOS_HEADER_ANDROID_BEGIN
 # _COCOS_HEADER_ANDROID_END
 
-
-LOCAL_STATIC_LIBRARIES := cocos2dx_static
+LOCAL_STATIC_LIBRARIES := boost_thread_static
+LOCAL_STATIC_LIBRARIES += boost_system_static
+LOCAL_STATIC_LIBRARIES += cocos2dx_static
 LOCAL_STATIC_LIBRARIES += cocos_ssl_static
 LOCAL_STATIC_LIBRARIES += cocos_crypto_static
 
@@ -177,6 +177,7 @@ LOCAL_STATIC_LIBRARIES += cocos_crypto_static
 include $(BUILD_SHARED_LIBRARY)
 
 $(call import-module,.)
+$(call import-module,/../../../../external/boost/android/prebuilt)
 
 # _COCOS_LIB_IMPORT_ANDROID_BEGIN
 # _COCOS_LIB_IMPORT_ANDROID_END
