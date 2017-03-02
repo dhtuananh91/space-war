@@ -83,9 +83,11 @@ bool LoginScene::init()
 			this->m_userName = ((ui::TextField*)sender)->getString();
 			CCLOG("Updated username: %s", this->m_userName.c_str());
 			break;
-		case cocos2d::ui::TextField::EventType::INSERT_TEXT:			
+		case cocos2d::ui::TextField::EventType::INSERT_TEXT:
+			this->m_userName = ((ui::TextField*)sender)->getString();
 			break;
 		case cocos2d::ui::TextField::EventType::DELETE_BACKWARD:
+			this->m_userName = ((ui::TextField*)sender)->getString();
 			break;
 		default:
 			break;

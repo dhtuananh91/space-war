@@ -19,7 +19,7 @@
 #include "GameObjects/StarshipNode.h"
 #include "GameObjects/WeaponShot.h"
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID || CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) // ) // 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS || CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	#define SHOW_BUTTONS
 #endif
 

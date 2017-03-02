@@ -518,7 +518,7 @@ void GameScene::removeStarship(long int userId)
 	if (!starships->count(userId)) return;
 	StarshipNode* ship = starships->at(userId);
 	starships->erase(userId);
-	ship->ship->runAction(Sequence::createWithTwoActions(FadeOut::create(0.5f), RemoveSelf::create()));
+	ship->runAction(Sequence::createWithTwoActions(FadeOut::create(0.5f), RemoveSelf::create()));
 
 	if (ship == myStarship)
 		myStarship = NULL;
