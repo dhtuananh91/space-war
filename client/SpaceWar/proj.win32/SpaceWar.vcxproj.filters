@@ -48,6 +48,12 @@
     <ClCompile Include="..\Classes\ServerConnector.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\StarshipNode.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameObjects\WeaponShot.cpp">
+      <Filter>src\GameObjects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -85,6 +91,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Networks\IEventListener.h">
       <Filter>src\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\StarshipNode.h">
+      <Filter>src\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameObjects\WeaponShot.h">
+      <Filter>src\GameObjects</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
