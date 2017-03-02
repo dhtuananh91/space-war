@@ -60,7 +60,7 @@ Build
  3. Navigate to **client/SpaceWar**
  4. Run ```$cocos run -p android```
 
- #### <i class="icon-folder"></i> Build on Windows
+#### <i class="icon-folder"></i> Build on Windows
 
  1. Download cocos2d-x
  2. Extract it into **client/SpaceWar**
