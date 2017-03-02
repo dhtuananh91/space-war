@@ -12,7 +12,10 @@ Dependencies
 -------------
 - [Cocos2dx v3.14.1](http://www.cocos2d-x.org/filedown/cocos2d-x-3.14.1.zip)
 - [Android NDK R10e macOS](https://dl.google.com/android/repository/android-ndk-r10e-darwin-x86_64.zip)
+- [Android NDK R10e Windows x64](https://dl.google.com/android/repository/android-ndk-r10e-windows-x86_64.zip)
+- [Android NDK R10e Windows x86](https://dl.google.com/android/repository/android-ndk-r10e-windows-x86.zip)
 - [Android SDK macOS](https://dl.google.com/android/repository/tools_r25.2.3-macosx.zip)
+- [Android SDK Windows](https://dl.google.com/android/repository/tools_r25.2.3-windows.zip)
 - [Apache Ant v1.9.7](http://archive.apache.org/dist/ant/binaries/apache-ant-1.9.7-bin.zip)
 - **Boost C++ Library v1.59** (included in external folder)
 - **OpenSSL v1.0.2j** (included in external folder)
@@ -56,6 +59,18 @@ Build
  2. Make sure your **android sdk tool** have **platform-25**. You can check it at **platforms** folder inside **Android SDK Tool**
  3. Navigate to **client/SpaceWar**
  4. Run ```$cocos run -p android```
+
+ #### <i class="icon-folder"></i> Build on Windows
+
+ 1. Download cocos2d-x
+ 2. Extract it into **client/SpaceWar**
+ 3. Rename it to cocos2d
+ 4. Download and extract SmartfoxClientAPI info **client/sfs-api**
+ 5. Open the Visual Studio solution contained in the **client/SpaceWar/proj.win32** folder
+ 6. Right click on **SmartfoxClientApi** project and choose **Properties**
+ 7. In **General** category, change the value of **Output Directory** into ```$(SolutionDir)$(Configuration).win32\``` for both **Debug** and **Release** mode
+ 8. Repeat step 6,7 to **zlibvc** project
+ 9. Press build
 
 ----------
 
